@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas Semanales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1f3a5f, #3d6a99);
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .tarjeta {
+            background-color: #ffffff;
+            color: #222;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #1f3a5f;
+            font-size: 26px;
+            margin-top: 0;
+        }
+        .oferta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            background-color: #f2f4f7;
+            border-left: 6px solid #e8a317;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .oferta h2 {
+            font-size: 18px;
+            color: #1f3a5f;
+            margin: 0 0 4px 0;
+        }
+        .oferta p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .precio {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1f3a5f;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #e8a317;
+            color: #1f3a5f;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: #f5b93a;
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <h1>Conoce nuestras ofertas semanales</h1>
+        <p>Promociones de esta semana:</p>
+
+        <div class="oferta">
+            <div>
+                <h2>Cambio de aceite</h2>
+                <p>Incluye filtro de aceite</p>
+            </div>
+            <div class="precio">$80.000</div>
+        </div>
+
+        <div class="oferta">
+            <div>
+                <h2>Revision general</h2>
+                <p>Frenos, luces y suspension</p>
+            </div>
+            <div class="precio">$120.000</div>
+        </div>
+
+        <div class="oferta">
+            <div>
+                <h2>Alineacion y balanceo</h2>
+                <p>Para las cuatro llantas</p>
+            </div>
+            <div class="precio">$60.000</div>
+        </div>
+
+        <a href="/bienvenida/">Volver al inicio</a>
+    </div>
+</body>
+</html>

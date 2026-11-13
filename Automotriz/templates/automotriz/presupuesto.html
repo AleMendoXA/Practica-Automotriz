@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Presupuestos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1f3a5f, #3d6a99);
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .tarjeta {
+            background-color: #ffffff;
+            color: #222;
+            max-width: 450px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #1f3a5f;
+            font-size: 26px;
+            margin-top: 0;
+        }
+        form {
+            text-align: left;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 4px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            background-color: #e8a317;
+            color: #1f3a5f;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #f5b93a;
+        }
+        .volver {
+            display: inline-block;
+            margin-top: 20px;
+            color: #1f3a5f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <h1>Conoce nuestros presupuestos</h1>
+        <p>Pide tu presupuesto y te respondemos pronto.</p>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="vehiculo">Vehiculo de interes</label>
+            <select id="vehiculo" name="vehiculo">
+                <option>Sedan compacto</option>
+                <option>Camioneta familiar</option>
+                <option>SUV</option>
+                <option>Camioneta tipo pickup</option>
+            </select>
+
+            <label for="mensaje">Mensaje (opcional)</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button type="submit">Pedir presupuesto</button>
+        </form>
+        <a class="volver" href="/bienvenida/">Volver al inicio</a>
+    </div>
+</body>
+</html>
